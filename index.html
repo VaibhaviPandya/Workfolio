@@ -1,175 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vaibhavi Pandya | DevSecOps Engineer</title>
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: #1e3a8a;
-            color: white;
-        }
-
-        header h1 {
-            margin: 10px 0;
-            font-size: 36px;
-        }
-
-        header p {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-
-        .section {
-            width: 80%;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #1e3a8a;
-            border-bottom: 3px solid #1e3a8a;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .contact a {
-            text-decoration: none;
-            color: #1e3a8a;
-        }
-
-        .experience,
-        .education {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #1e3a8a;
-            color: white;
-        }
-
-        .skills span,
-        .certs span {
-            display: inline-block;
-            background: #1e3a8a;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 4px;
-            margin: 5px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Vaibhavi Pandya | DevSecOps & Cloud Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Vaibhavi Pandya - DevSecOps, Azure, Terraform, CI/CD, Cloud Security." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-    <header>
-        <h1>Vaibhavi Pandya</h1>
-        <p>DevSecOps | Azure | Terraform | CI/CD Pipelines | Azure Policy</p>
-        <p>Gujarat, India</p>
-    </header>
+  <!-- Particle Background -->
+  <canvas id="bg-canvas"></canvas>
 
-    <!-- Contact -->
-    <div class="section contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:vaibhupandya6@gmail.com">vaibhupandya6@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhavipandya-a7664b191" target="_blank">View Profile</a></p>
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">VP<span>.</span></div>
+      <nav class="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certs" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Summary -->
-    <div class="section">
-        <h2>Profile Summary</h2>
-        <p>
-            Strong understanding of cloud computing, including IaaS, PaaS, and SaaS.  
-            Experience with CI/CD tools like Jenkins, GitLab, and Azure DevOps.  
-            Hands-on with Infrastructure as Code using Terraform and CloudFormation.  
-            Familiar with Azure policies, AWS, and cloud security practices.  
-            Skilled in using Checkov for IaC security scanning and firewall appliance management.
+  <!-- Hero -->
+  <section id="home" class="section hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <div class="pill">DevSecOps · Cloud · Automation</div>
+        <h1 class="hero-title">
+          <span class="typing-prefix">Hi, I'm</span>
+          <span class="typing-name" data-text="Vaibhavi&nbsp;Pandya">Vaibhavi&nbsp;Pandya</span>
+        </h1>
+        <p class="hero-subtitle">
+          DevSecOps | Azure | Terraform | CI/CD Pipelines | Azure Policy | Cloud Security
         </p>
+        <p class="hero-body">
+          I build secure, automated cloud infrastructure with a strong focus on IaC, CI/CD,
+          and security best practices. Passionate about bridging the gap between
+          development, operations, and security.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn primary">Let&apos;s Connect</a>
+          <a href="#experience" class="btn ghost">View Experience</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-pill">
+            <span class="metric-label">Experience</span>
+            <span class="metric-value">6+ yrs</span>
+          </div>
+          <div class="metric-pill">
+            <span class="metric-label">Cloud & DevSecOps</span>
+            <span class="metric-value">Azure · Terraform · CI/CD</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card tilt-card">
+        <div class="hero-card-inner">
+          <!-- Profile photo: replace `images/profile.svg` with your photo (e.g. images/profile.jpg) -->
+          <div class="profile-wrap">
+            <!-- Attempt to load user's uploaded photo. Falls back to the SVG placeholder if missing. -->
+            <!-- Using exact filename as found in images/ (case-sensitive) -->
+            <img class="profile-photo" src="images/Media.jpeg?v=3" alt="Vaibhavi Pandya" onerror="this.onerror=null;this.src='images/profile.svg'" />
+          </div>
+          <p class="hero-card-title">Currently</p>
+          <p class="hero-card-role">DevOps Tech Lead</p>
+          <p class="hero-card-company">Infopercept · Ahmedabad</p>
+          <div class="hero-tags">
+            <span class="tag">Azure</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">DevSecOps</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Experience -->
-    <div class="section">
-        <h2>Experience</h2>
-
-        <div class="experience">
-            <h3>DevOps Tech Lead — Infopercept</h3>
-            <p><strong>Dec 2024 - Present | Ahmedabad, India</strong></p>
-        </div>
-
-        <div class="experience">
-            <h3>DevOps Engineer — Infopercept</h3>
-            <p><strong>Dec 2019 - Present | Ahmedabad, India</strong></p>
-        </div>
-
-        <div class="experience">
-            <h3>Internship Trainee — Infopercept</h3>
-            <p><strong>Dec 2021 - Jan 2025 | Ahmedabad, India</strong></p>
-        </div>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div class="section-header">
+        <p class="section-kicker">About</p>
+        <h2>Who I am</h2>
+      </div>
+      <div class="section-body">
+        <p>
+          I am a DevSecOps and Cloud Engineer based in Gujarat, India with hands-on experience
+          in designing, deploying, and securing cloud-native workloads. I&apos;ve worked extensively
+          with Azure, Terraform, CI/CD pipelines, and Azure Policy to build secure and compliant
+          environments.
+        </p>
+        <p>
+          My background includes working with security appliances such as firewalls, enforcing
+          infrastructure-as-code security using tools like <strong>Checkov</strong>, and enabling
+          development teams with robust DevSecOps practices.
+        </p>
+        <p>
+          I enjoy solving real-world infrastructure challenges, automating everything I can,
+          and making complex deployments reliable, repeatable, and secure.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <!-- Skills -->
-    <div class="section">
-        <h2>Top Skills</h2>
-        <div class="skills">
-            <span>Terraform</span>
-            <span>CI/CD</span>
-            <span>Jenkins</span>
-            <span>Azure</span>
-            <span>AWS</span>
-            <span>Azure Policy</span>
-            <span>Checkov</span>
-            <span>CloudFormation</span>
-            <span>DevSecOps</span>
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-kicker">Experience</p>
+        <h2>Professional Journey</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-period">Dec 2024 – Present</p>
+            <h3>DevOps Tech Lead</h3>
+            <p class="timeline-company">Infopercept · Ahmedabad, Gujarat, India</p>
+            <ul>
+              <li>Leading DevOps initiatives with focus on secure cloud architectures on Azure.</li>
+              <li>Designing and managing CI/CD pipelines using Jenkins, GitLab, and Azure DevOps.</li>
+              <li>Implementing Terraform-based IaC for repeatable and compliant infrastructure deployments.</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-period">Dec 2019 – Present</p>
+            <h3>DevOps Engineer</h3>
+            <p class="timeline-company">Infopercept · Ahmedabad, Gujarat, India</p>
+            <ul>
+              <li>Built and maintained CI/CD pipelines across multiple environments and applications.</li>
+              <li>Worked with Azure and AWS to deploy scalable and secure infrastructure.</li>
+              <li>Collaborated with security teams to integrate scanning tools and policies into delivery pipelines.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-period">Dec 2021 – Jan 2025</p>
+            <h3>Internship Trainee</h3>
+            <p class="timeline-company">Infopercept · Ahmedabad, Gujarat, India</p>
+            <ul>
+              <li>Gained hands-on exposure to DevOps tooling, cloud fundamentals, and Linux systems.</li>
+              <li>Assisted in automation tasks and participated in implementing infrastructure-as-code.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Certifications -->
-    <div class="section">
-        <h2>Certifications</h2>
-        <div class="certs">
-            <span>Cybersecurity Essentials</span>
-            <span>Introduction to Cybersecurity</span>
-            <span>Azure Fundamentals</span>
-            <span>Terraform Associate (003)</span>
-            <span>Terraform Challenges</span>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-kicker">Skills</p>
+        <h2>What I work with</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card tilt-card">
+          <h3>Cloud & Platforms</h3>
+          <ul>
+            <li>Microsoft Azure</li>
+            <li>AWS (Foundational)</li>
+            <li>Azure Policy & Governance</li>
+            <li>Linux environments</li>
+          </ul>
         </div>
+
+        <div class="skill-card tilt-card">
+          <h3>DevOps & CI/CD</h3>
+          <ul>
+            <li>Jenkins</li>
+            <li>GitLab CI/CD</li>
+            <li>Azure DevOps Pipelines</li>
+            <li>CDK & automation workflows</li>
+          </ul>
+        </div>
+
+        <div class="skill-card tilt-card">
+          <h3>Infrastructure as Code</h3>
+          <ul>
+            <li>Terraform</li>
+            <li>CloudFormation</li>
+            <li>Infrastructure security with Checkov</li>
+            <li>Reusable IaC modules and patterns</li>
+          </ul>
+        </div>
+
+        <div class="skill-card tilt-card">
+          <h3>Security & Tools</h3>
+          <ul>
+            <li>DevSecOps practices</li>
+            <li>Security appliances & firewalls</li>
+            <li>Static & policy-based analysis for IaC</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Education -->
-    <div class="section">
-        <h2>Education</h2>
-        <div class="education">
-            <h3>Master of Computer Applications (MCA)</h3>
-            <p>Dharmsinh Desai University (2019 - 2021)</p>
-        </div>
-        <div class="education">
-            <h3>Shree Swaminarayan College of Computer Science</h3>
-        </div>
+  <!-- Certifications -->
+  <section id="certs" class="section">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-kicker">Certifications</p>
+        <h2>Validated Knowledge</h2>
+      </div>
+      <div class="chips">
+        <span class="chip">Cybersecurity Essentials</span>
+        <span class="chip">Introduction to Cybersecurity</span>
+        <span class="chip">Microsoft Certified: Azure Fundamentals</span>
+        <span class="chip">Terraform Challenges</span>
+        <span class="chip">HashiCorp Certified: Terraform Associate (003)</span>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Vaibhavi Pandya | Portfolio</p>
-    </footer>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container two-col">
+      <div class="section-header">
+        <p class="section-kicker">Contact</p>
+        <h2>Let&apos;s talk</h2>
+      </div>
+      <div class="section-body">
+        <p>
+          Whether you&apos;re looking to discuss DevSecOps, cloud infrastructure, or want
+          help improving your CI/CD and security posture, feel free to reach out.
+        </p>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:vaibhupandya6@gmail.com">vaibhupandya6@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/vaibhavi-pandya/" target="_blank" rel="noreferrer">
+              linkedin.com/in/vaibhavi-pandya
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span>Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Badges (replace the badge images/links with your own certificates or badge images) -->
+  <section class="badges-section">
+    <div class="container badges-row">
+      <a href="https://www.linkedin.com/in/vaibhavi-pandya/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <img class="badge-img" src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile">
+      </a>
+      <a href="mailto:vaibhupandya6@gmail.com" aria-label="Email">
+        <img class="badge-img" src="https://img.shields.io/badge/Email-vaibhupandya6@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+      </a>
+      <a href="#" aria-label="Azure Certification">
+        <img class="badge-img" src="https://img.shields.io/badge/Azure-Certified-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure Certified">
+      </a>
+      <a href="#" aria-label="Terraform Certification">
+        <img class="badge-img" src="https://img.shields.io/badge/Terraform-Certified-623CE4?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform Certified">
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Vaibhavi Pandya · DevSecOps & Cloud Engineer</p>
+    </div>
+  </footer>
+
+  <script src="js/particles.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
